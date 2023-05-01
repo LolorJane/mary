@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Check if a number is between two other numbers</title>
+  </head>
+  <body>
+    <script>
+      function isBetween(num1, num2, num3) {
+        //nag butang tag value kang isBeteen  nga num1, num2, num3
+        return num1 >= num2 && num1 <= num3;
+      }
+      //deri nag set ug condition if si first number is greater than or equal to number2 mo return siya ug value nga "true"
+      //if kung si number1 less than or equal siya kang number 3 mo return siya ug value nga "False"
+      const firstNum = prompt("Enter the first number:");
+      const secondNum = prompt("Enter the second number:");
+      const thirdNum = prompt("Enter the third number:");
+
+      const result = isBetween(firstNum, secondNum, thirdNum);
+      //isBetween function mo return siyag value nga Boolean  Either true or False
+
+      document.write(result);
+      // e execute niya ang value ni result 
+    </script>
+  </body>
+</html>
